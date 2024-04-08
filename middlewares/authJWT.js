@@ -5,7 +5,7 @@ const authJWT = (req, res, next) => {
     const token = req.headers.authorization.split('Bearer ') [1]; // header에서 access token을 가져옵니다.
 // 일반적으로 
 
-//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTIzOTQ2MjAsImV4cCI6MTcxMzYwNDIyMH0.1B0egizTkpIsI0q0RkpSHVRjafFABQWp0ypBIUyQaBY
+//Authorization: Bearer "token-content"
 // 이런식으로 Bearer 를 앞에 두고 가져온다. 따라서 위와 같이 split 해줌
 
 
