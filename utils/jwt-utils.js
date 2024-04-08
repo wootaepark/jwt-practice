@@ -21,7 +21,7 @@ module.exports = {
   verify: (token) => { // access token 검증
     let decoded = null;
     try {
-      decoded = jwt.verify(token, secret);
+      decoded = jwt.verify(token, secret); // verify 함수는 token 값과 secret 키를 가지고 해독하는 느낌
       return {
         ok: true,
         id: decoded.id,
